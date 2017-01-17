@@ -8,6 +8,7 @@ feednami.load(url)
     for (var k = 0; k < feed.entries.length; k++) {
       var entry = feed.entries[k];
       displayEntry(entry);
+      console.log(entry);
     }
 })
 
@@ -29,6 +30,4 @@ function displayEntry(entry) {
   container.appendChild(text);
   document.getElementById("page-content").appendChild(container);
   document.getElementById("loading").innerHTML = "";
-
-
 }
