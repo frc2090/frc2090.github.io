@@ -1,0 +1,94 @@
+body {
+  padding-top:50px;
+
+}
+
+* {
+  text-shadow: none !important;
+  /*border: none !important;*/
+}
+
+#page-content {
+  padding-top: 10px;
+}
+
+#navcontainer {
+  background-color: #5983F7 !important;
+  border: none !important;
+  -moz-box-shadow:    0px 2px 10px 0px #333;
+  -webkit-box-shadow: 0px 2px 10px 0px #333;
+  box-shadow:         0px 2px 10px 0px #333;
+}
+
+#lowercontent {
+  -moz-box-shadow:    0px -2px 10px 0px #333;
+  -webkit-box-shadow: 0px -2px 10px 0px #333;
+  box-shadow:         0px -2px 10px 0px #333;
+
+}
+
+
+
+.blog-title {
+  font-size: 17pt;
+  font-weight: 300;
+}
+
+.blog-authorline {
+  font-size: 10pt;
+  font-weight: 400;
+  color: #888888;
+}
+
+
+hr {
+  margin-top: 3px;
+}
+
+li.current {
+  background-color: #233a77 !important;
+}
+
+ul.nav > li a:hover, ul.nav > li a:active, ul.nav > li a:visited{
+  background-color: #233a77 !important;
+}
+
+nav * {
+  color: yellow !important;
+}
+
+ul.nav > li a:hover, ul.nav > li {
+  font-size: 14pt;
+}
+
+.navbar-brand {
+  font-size: 20pt;
+}
+
+.blogpost {
+  outline: 2px solid #EEEEEE;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.bg {
+  background: url('/img/homepage.jpg') no-repeat center center;
+  position: fixed;
+  width: 100%;
+  height: 350px; /*same height as jumbotron */
+  top:48;
+  left:0;
+  z-index: -1;
+}
+
+.row {
+  background-color: #EEE;
+}
+.jumbotron {
+  height: 350px;
+  color: white;
+  text-shadow: #444 0 1px 1px;
+  background:transparent;
+  margin-bottom: 0px;
+}
