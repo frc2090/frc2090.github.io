@@ -1,16 +1,17 @@
 
 //http://devinstestblog2090.blogspot.com/feeds/posts/default
-var url = 'http://punahoufrc2090.blogspot.com/feeds/posts/default';
-var div = document.getElementById("blog-div");
-feednami.setPublicApiKey('6e18b2484f28c3f1dff3223b466f38f0e24bb9a0ab53f0581f626354496f1450');
-feednami.load(url)
-  .then(feed => {
-    for (var k = 0; k < feed.entries.length; k++) {
-      var entry = feed.entries[k];
-      displayEntry(entry);
-      console.log(entry);
-    }
-})
+function viewBlog(url) {
+  var div = document.getElementById("blog-div");
+  feednami.setPublicApiKey('6e18b2484f28c3f1dff3223b466f38f0e24bb9a0ab53f0581f626354496f1450');
+  feednami.load(url)
+    .then(feed => {
+      for (var k = 0; k < feed.entries.length; k++) {
+        var entry = feed.entries[k];
+        displayEntry(entry);
+        console.log(entry);
+      }
+  })
+}
 
 function displayEntry(entry) {
   var container = document.createElement("div");
