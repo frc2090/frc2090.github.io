@@ -23,12 +23,23 @@ function displayEntry(entry) {
   container.appendChild(document.createElement("br"));
   var author = document.createElement("b");
   author.className = "blog-authorline";
+  var pubdateMS = new Date(entry.pubdate_ms);
+  console.log(pubdateMS);
   author.innerHTML = "By " + entry.author;
   container.appendChild(author);
   container.appendChild(document.createElement("hr"));
   var text = document.createElement("p");
   text.innerHTML = entry.description;
+  text.className = "blog-body";
   container.appendChild(text);
   document.getElementById("page-content").appendChild(container);
   document.getElementById("loading").innerHTML = "";
+}
+
+function clipDate(date) {
+  var mo = date.getMonth() + 1;
+  var da = date.getDate();
+  var ye = date.getFullYear();
+  var datestring = mo + "-" + da + "-" + ye;
+  var 
 }

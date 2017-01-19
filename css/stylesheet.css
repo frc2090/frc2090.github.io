@@ -33,7 +33,17 @@ body {
 
 
 hr {
-  margin-top: 3px;
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;
+  background-color: darkgray;
+  height: 1px;
+  margin: 3px;
+}
+
+.blog-body {
+  padding-top: 3px !important;
 }
 
 li.current {
@@ -57,10 +67,10 @@ ul.nav > li a:hover, ul.nav > li {
 }
 
 .blogpost {
-  outline: 2px solid #EEEEEE;
-  border-radius: 20px;
-  padding: 10px;
-  margin-bottom: 10px;
+  outline: 3px solid #AAA !important;
+  border-radius: 20px !important;
+  padding: 10px !important;
+  margin-bottom: 10px !important;
 }
 
 .bg {
@@ -84,7 +94,7 @@ body {
 }
 
 footer {
-  margin-top: 80px;
+  margin-top: 50px;
   padding-top: 30px;
   padding-bottom: 20px;
   background-color: #04193a;
@@ -108,6 +118,7 @@ footer a:hover {
   background:transparent;
   margin-bottom: 0px;
 }
+
 
 iframe {
   width: 900px;
