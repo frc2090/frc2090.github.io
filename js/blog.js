@@ -23,9 +23,7 @@ function displayEntry(entry) {
   container.appendChild(document.createElement("br"));
   var author = document.createElement("b");
   author.className = "blog-authorline";
-  var pubdateMS = new Date(entry.pubdate_ms);
-  console.log(pubdateMS);
-  author.innerHTML = "By " + entry.author;
+  author.innerHTML = "By " + entry.author + getDateString(new Date(entry.pubdate_ms));
   container.appendChild(author);
   container.appendChild(document.createElement("hr"));
   var text = document.createElement("p");
@@ -36,10 +34,6 @@ function displayEntry(entry) {
   document.getElementById("loading").innerHTML = "";
 }
 
-function clipDate(date) {
-  var mo = date.getMonth() + 1;
-  var da = date.getDate();
-  var ye = date.getFullYear();
-  var datestring = mo + "-" + da + "-" + ye;
-  var 
+function getDateString(date) {
+  return " on "+ date.toLocaleDateString() + " at " + date.toTimeString();
 }
