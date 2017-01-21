@@ -8,7 +8,6 @@ function viewBlog(url) {
       for (var k = 0; k < feed.entries.length; k++) {
         var entry = feed.entries[k];
         displayEntry(entry);
-        console.log(entry);
       }
   })
 }
