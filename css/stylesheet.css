@@ -50,8 +50,18 @@ li.current {
   background-color: #233a77 !important;
 }
 
-ul.nav > li a:hover, ul.nav > li a:active, ul.nav > li a:visited{
+ul.nav > li a:hover, ul.nav > li a:active, ul.nav > li a:visited, li.open,
+.nav-pills .open .dropdown-toggle, .nav > .open.active > a:hover {
   background-color: #233a77 !important;
+  background-image: none !important;
+}
+
+ul.dropdown-menu {
+  background-color: #5983F7
+}
+
+a {
+  background-image:none !important;
 }
 
 nav * {
@@ -60,6 +70,10 @@ nav * {
 
 ul.nav > li a:hover, ul.nav > li {
   font-size: 14pt;
+}
+
+li.open > a {
+  background-color: #233a77 !important;
 }
 
 .navbar-brand {
@@ -74,7 +88,6 @@ ul.nav > li a:hover, ul.nav > li {
 }
 
 .bg {
-  background: url('/img/homepage.jpg') no-repeat center center;
   position: fixed;
   width: 100%;
   height: 350px; /*same height as jumbotron */
@@ -119,6 +132,9 @@ footer a:hover {
   margin-bottom: 0px;
 }
 
+.dropdown-menu > li > a {
+  font-size: 11pt !important;
+}
 
 iframe {
   width: 900px;
