@@ -72,6 +72,10 @@ ul.nav > li a:hover, ul.nav > li {
   font-size: 14pt;
 }
 
+li.open > a {
+  background-color: #233a77 !important;
+}
+
 .navbar-brand {
   font-size: 20pt;
 }

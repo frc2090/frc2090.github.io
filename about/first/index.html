@@ -49,7 +49,14 @@
               <li><a href="../../blog">Blog</a></li>
               <li><a href="../../videos">Videos</a></li>
               <li><a href="../../robots">Robots</a></li>
-              <li class="current"><a href="#">About Us</a></li>
+              <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="../../about/us">About Us</a></li>
+                <li><a href="../../about/first">About FIRST</a></li>
+              </ul>
+              </li>
+
             </ul>
           </ul>
 
@@ -61,17 +68,19 @@
       <div class="row">
         <div class="col-sm-1 hidden-xs"></div>
         <div class="col-sm-5 col-xs-12" id="page-content">
-
-          <img src="../../img/homepage2.jpg" style="max-width:100%;height:auto;">
-        </div>
-        <div class="col-sm-5 col-xs-12" id="page-content">
-          <h1>About Us</h1>
+          <h1>About FIRST</h1>
           <div class="panel panel-default">
             <div class="panel-body">
+
               <p>Founded in 1989, FIRST (For Inspiration and Recognition of Science and Technology), has created a lasting impact for nearly thirty years. Originally designed to encourage students to pursue STEM (Science, Technology, Engineering, and Math), it has since expanded to provide important life skills as well.</p>
               <p>The foundation of FIRST is also strongly based on concepts such as Gracious Professionalism and Coopertition. Gracious Professionalism works as a concept for a way of life. It encourages participants of FIRST to be gracious and respectful, yet still competing to the upmost of their ability against in each other. Similar to this concept, is FIRST's other statement, Coopertition. It encourages teams to be gracious competitors with each other, and cooperate even with each other during competition.</p>
             </div>
           </div>
+        </div>
+        <div class="col-sm-5 col-xs-12" id="page-content">
+
+          <img src="../../img/firstchamps.jpg" style="max-width:100%;height:auto;">
+          <small>St. Louis Post-Dispatch</small>
         </div>
         <div class="col-sm-1 hidden-xs"></div>
       </div>
@@ -82,9 +91,14 @@
     </footer>
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
 
     <script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
     <script src="../../js/collapse.js"></script>
+
 
   </body>
 </html>
