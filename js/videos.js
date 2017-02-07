@@ -19,6 +19,5 @@ function displayEntry(entry) {
   l = entry.link.replace("http","https");
   e.src = l.replace('watch?v=', 'embed/');
   e.frameborder = '0';
-  e.setAttribute('allowFullScreen', '');
   document.getElementById("page-content").appendChild(e);
 }
