@@ -8,6 +8,7 @@ function viewVid(url) {
       for (var k = 0; k < feed.entries.length; k++) {
         var entry = feed.entries[k];
         displayEntry(entry);
+        console.log(entry);
       }
   })
   document.getElementById("loading").innerHTML = "";
@@ -15,7 +16,8 @@ function viewVid(url) {
 
 function displayEntry(entry) {
   var e = document.createElement("iframe");
-  e.src = entry.link.replace('watch?v=', 'embed/');
+  l = entry.link.replace("http","https");
+  e.src = l.replace('watch?v=', 'embed/');
   e.frameborder = '0';
   e.setAttribute('allowFullScreen', '');
   document.getElementById("page-content").appendChild(e);
