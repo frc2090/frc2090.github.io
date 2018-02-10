@@ -15,6 +15,7 @@ function viewVid(url) {
 }
 
 
+
 function displayEntry(entry) {
   var e = document.createElement("iframe");
   e.src = entry.link.replace('watch?v=', 'embed/');
